@@ -4,10 +4,6 @@ orbs:
 workflows:
   deploy_infrastructure:
     jobs:
-      - build:
-          steps:
-            echo $access_key
-            echo $secret_key
       - terraform/fmt:
           checkout: true
           context: terraform
