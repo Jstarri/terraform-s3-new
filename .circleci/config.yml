@@ -3,6 +3,10 @@ orbs:
   terraform: circleci/terraform@3.1
 workflows:
   deploy_infrastructure:
+    - persist_to_workspace:
+          root: .
+          paths:
+            - .
     jobs:
       - terraform/fmt:
           checkout: true
