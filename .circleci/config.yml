@@ -26,7 +26,7 @@ workflows:
               only: main
           requires:
             - terraform/plan
-      - persist_to_workspace:
+      - workspace-path:
           root: .
           paths:
             - .      
