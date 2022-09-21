@@ -7,15 +7,18 @@ workflows:
       - terraform/fmt:
           checkout: true
           context: terraform
+          workspace-path: .
       - terraform/validate:
           checkout: true
           context: terraform
+          workspace-path: .
           requires:
             - terraform/fmt
       - terraform/plan:
           checkout: true
           context: terraform
           persist-workspace: true
+          workspace-path: .
           requires:
             - terraform/validate
       - terraform/apply:
@@ -27,3 +30,4 @@ workflows:
           workspace-path: .    
           requires:
             - terraform/plan
+            
