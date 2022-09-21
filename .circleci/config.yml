@@ -24,5 +24,6 @@ workflows:
           filters:
             branches:
               only: main
+          workspace-path: .    
           requires:
             - terraform/plan
