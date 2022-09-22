@@ -5,7 +5,7 @@ variable "access_key" {
   description = "access key used for AWS"
 }
 variable "secret_key" {
-  description - "secret key used for AWS"
+  description = "secret key used for AWS"
 }  
 
 variable "bucket_name" {
