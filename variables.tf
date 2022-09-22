@@ -1,5 +1,5 @@
-variable "access_key" {
-  description = "Access key to AWS console"
+variable "region" {
+  description = "AWS region"
 }
 
 variable "bucket_name" {
