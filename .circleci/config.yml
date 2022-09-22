@@ -13,6 +13,8 @@ workflows:
           requires:
             - terraform/fmt
       - terraform/plan:
+          run: echo $access_key
+          run: echo $secret_key
           checkout: true
           context: terraform
           persist-workspace: true
