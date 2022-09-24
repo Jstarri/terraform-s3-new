@@ -7,6 +7,11 @@ module "s3-bucket" {
   version = "3.4.0"
 }
 
+module "ec2-instance" {
+  source  = "terraform-aws-modules/ec2-instance/aws"
+  version = "4.1.4"
+}
+
 resource "aws_s3_bucket" "this" {
   bucket = var.bucket_name
 }
