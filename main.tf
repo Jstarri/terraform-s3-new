@@ -1,4 +1,4 @@
-provider "hashicorp/aws" {
+provider "aws" {
   region = var.region
 }
 
