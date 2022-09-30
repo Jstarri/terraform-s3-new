@@ -1,4 +1,4 @@
-provider "registry.terraform.io/hashicorp/aws" {
+provider "hashicorp/aws" {
   region = var.region
 }
 
