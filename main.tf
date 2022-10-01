@@ -5,3 +5,4 @@ provider "aws" {
 resource "aws_s3_bucket" "this" {
   bucket = "zali-s3-bucket"
 }
+
